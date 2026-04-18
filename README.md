@@ -27,14 +27,17 @@ graph TD
 
 ## 📸 visual Interface
 
-![SecureStar Landing](assets/screenshot1.png)
+![SecureStar Landing](assets/main.png)
 *Figure 1: Immersive 3D Spatial Landing Page with Three.js*
 
-![SecureStar Dashboard](assets/screenshot2.png)
+![SecureStar Dashboard](assets/apitest.png)
 *Figure 2: AI-Powered Audit Report with Pass/Fail Visualization*
 
+![Swagger Dashboard](assets/APIs.png)
+*Figure 3: Swagger API Documentation*
+
 > [!NOTE]
-> Please replace the placeholder images above with your actual screenshots (`screenshot1.png`, `screenshot2.png`) for final presentation.
+> Please replace the placeholder images above with your actual screenshots (`main.png`, `apitest.png`, `APIs.png`) for final presentation.
 
 ---
 
@@ -76,6 +79,25 @@ The next phase of SecureStar One aims to implement:
 2.  **Predictive Attack Simulation**: LLMs mimicking hacker behavior to find "Zero-Day" flaws before they exist.
 3.  **Real-Time API Traffic Shielding**: Live-monitoring of API requests with instant AI-driven blocking of malicious patterns.
 
+## 🚀 Deployment (Google Cloud Run)
+
+To host **SecureStar One** on your own Google Cloud environment:
+
+1. **Prerequisites**: [Install GCloud SDK](https://cloud.google.com/sdk/docs/install) and run `gcloud auth login`.
+2. **Setup Project**:
+   ```bash
+   gcloud config set project [YOUR_PROJECT_ID]
+   gcloud services enable run.googleapis.com cloudbuild.googleapis.com
+   ```
+3. **One-Command Deploy**:
+   ```bash
+   gcloud run deploy securestar-one --source .
+   ```
+4. **Configure Environment Variables**:
+   ```bash
+   gcloud run services update securestar-one --set-env-vars OPENROUTER_API_KEY=your_key_here
+   ```
+
 ---
 
 ## 👨‍💻 Prepared by
@@ -83,4 +105,4 @@ The next phase of SecureStar One aims to implement:
 *Special thanks to the Antigravity Team for the agentic development support.*
 
 ---
-*© 2026 SecureStar One Labs. Securing the world, one endpoint at a time.*
+*© 2026 SecureStar One Labs. All Rights Reserved by Asif.*
