@@ -1,8 +1,9 @@
+import os
 import json
 import requests
 
 # CONFIG
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("API_KEY")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL_NAME = "nvidia/nemotron-3-super-120b-a12b:free"
 
