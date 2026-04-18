@@ -32,15 +32,17 @@
     </style>
 </head>
 <body>
-    <div id="canvas-container"></div>
+    <a href="#main-content" class="sr-only focus:not-only:absolute focus:top-4 focus:left-4 bg-blue-600 text-white p-2 rounded z-[1000]">Skip to Main Content</a>
+    <div id="canvas-container" aria-hidden="true"></div>
 
-    <nav class="flex justify-between items-center px-6 md:px-10 py-10 max-w-7xl mx-auto w-full">
-        <div class="text-xl font-black tracking-tighter">SECURE<span class="text-blue-500">STAR</span> ONE</div>
-        <button onclick="openModal()" class="text-[10px] font-bold tracking-widest text-blue-400 border border-blue-400/30 px-6 py-2 rounded-full hover:bg-blue-400/10 transition uppercase">Get Started</button>
+    <nav class="flex justify-between items-center px-6 md:px-10 py-10 max-w-7xl mx-auto w-full" aria-label="Main Navigation">
+        <div class="text-xl font-black tracking-tighter" aria-label="SecureStar One Logo">SECURE<span class="text-blue-500">STAR</span> ONE</div>
+        <button onclick="openModal()" aria-label="Open Security Scanner" class="text-[10px] font-bold tracking-widest text-blue-400 border border-blue-400/30 px-6 py-2 rounded-full hover:bg-blue-400/10 transition uppercase">Get Started</button>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 text-center flex flex-col items-center">
-        <h1 class="text-5xl md:text-9xl font-black mb-6 tracking-tighter uppercase">SECURESTAR ONE</h1>
+    <main id="main-content">
+        <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 text-center flex flex-col items-center" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="text-5xl md:text-9xl font-black mb-6 tracking-tighter uppercase">SECURESTAR ONE</h1>
         <p class="text-[10px] md:text-sm tracking-[0.3em] md:tracking-[0.8em] uppercase font-bold text-violet-400 mb-20">Distributed API Security Infrastructure</p>
         <div class="flex flex-wrap gap-10 md:gap-20 justify-center opacity-90 text-[10px] md:text-xs tracking-widest uppercase mb-40">
             <div class="flex flex-col"><span class="text-4xl md:text-5xl font-black text-blue-400 mb-2">$50K+</span><span class="font-bold text-violet-300">Cost Saved</span></div>
