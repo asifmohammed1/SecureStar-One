@@ -1,6 +1,10 @@
 # 🛡️ SecureStar One: Next-Gen API Security Intelligence
 **Prepared by Asif** | *Empowered by Antigravity AI*
 
+### 🌐 [Live Demo Link](https://secure-star-one.vercel.app/)
+
+---
+
 SecureStar One is a state-of-the-art API security suite designed specifically for large-scale physical infrastructures such as sporting venues and smart stadiums. It leverages high-reasoning AI to provide autonomous vulnerability detection and remediation guidance.
 
 ---
