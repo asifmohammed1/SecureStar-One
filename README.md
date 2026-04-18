@@ -15,8 +15,8 @@ SecureStar One is a state-of-the-art API security suite designed specifically fo
 graph TD
     A[Immersive 3D Landing Page] -->|Spatial Modal| B[Gradio Audit Dashboard]
     B -->|Scanner Request| C[FastAPI Orchestrator]
-    C -->|Secure Payload| D[LLM Engine: Nemotron 120B]
-    D -->|AI Reasoning| C
+    C -->|Direct Payload| D[Nvidia NIM: Nemotron-Mini 4B]
+    D -->|Security Logic| C
     C -->|Vulnerability Report| B
     B -->|Interactive Chat| E[Security Expert AI]
     
@@ -47,33 +47,32 @@ graph TD
 
 ## 🚀 Why SecureStar One?
 Physical event venues rely on thousands of real-time data points (ticketing, IoT, crowd flow). A single compromised API can lead to catastrophic security breaches. SecureStar One provides:
+- **Nvidia NIM Intelligence**: Direct integration with Nvidia infrastructure for low-latency audits.
 - **Zero-Trust Validation**: Every endpoint is audited against OWASP Top 10.
 - **Spatial Intuition**: Modern Zero-UI design ensures complex data is easy to parse.
-- **Context-Aware Chat**: Directly consult with the AI about specific hardware-software API integrations.
 
 ---
 
 ## 💰 Business Value & ROI
 
-| Metric | Traditional Manual Audit | SecureStar One (AI) |
+| Metric | Traditional Manual Audit | SecureStar One (Nvidia) |
 | :--- | :--- | :--- |
-| **Operational Cost** | $65,000+ / Cycle | **~$500 (API Usage)** |
+| **Operational Cost** | $65,000+ / Cycle | **Minimal Cloud Usage** |
 | **Audit Time** | 2-3 Weeks | **Minutes** |
 | **Manpower Required** | 5-Person Team | **1 Operator** |
-| **Reliability** | Human Error Prone | **Consistent High-Reasoning AI** |
+| **Reliability** | Human Error Prone | **Consistent Nvidia Logic** |
 
 - **Direct Savings**: Estimated **$50,000 - $75,000** savings per security lifecycle.
-- **Productivity**: **1000% increase** in testing frequency, moving from annual audits to daily scans.
-- **Risk Mitigation**: Drastically reduces insurance premiums by maintaining a verified "Hardened API" status.
+- **Productivity**: **1000% increase** in testing frequency.
 
 ---
 
 ## 🛠️ Technical Stack
 - **Core Engine**: Python 3.9+ / FastAPI
-- **LLM Intelligence**: `nvidia/nemotron-3-super-120b-a12b:free` (via OpenRouter)
+- **LLM Intelligence**: `nvidia/nemotron-mini-4b-instruct` (Direct Nvidia NIM)
 - **Frontend Dashboard**: Gradio (Mounted within FastAPI)
 - **Spatial Landing Page**: Three.js / Tailwind CSS / Glassmorphism
-- **Deployment**: Architecture-ready for Google Cloud Run / Docker
+- **Deployment**: Architecture-ready for Google Cloud Run / Vercel
 
 ---
 
