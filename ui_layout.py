@@ -12,7 +12,7 @@ def build_ui():
                 gr.Markdown("## Production API Security Audit")
                 with gr.Row():
                     api_in = gr.Textbox(label="API URL", placeholder="Target endpoint (Internal or External)")
-                    swag_in = gr.Textbox(label="Swagger URL", value="https://secure-star-one.vercel.app/openapi.json")
+                    swag_in = gr.Textbox(label="Swagger URL", value="https://securestar-one-1034435897603.us-central1.run.app/openapi.json")
                 scan_btn = gr.Button("RUN FULL AUDIT", variant="primary")
                 report_out = gr.Markdown(elem_classes="report-box", value="System Idle. Ready for assessment.")
                 
